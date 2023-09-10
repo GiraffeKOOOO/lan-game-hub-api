@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gUnnzFBI7MQi/J9MKlkHdvvjFnciX7aKKkMyB/IG3YZz3ug70H3ZyoAnQoWoIjj1TQlVGii3n/2/NC2OuM8VIA==",
+  "dgSpecHash": "xMS9TjuV2+/icNDAriijUhIyuOZHMc0VJjeSHVN0N0jNusiVj4tt8OqQhcR7Ragj8lJSRRmYas2+VkzQbLND5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pstep\\Desktop\\test\\lan-game-hub-api\\lan-game-hub-api.csproj",
+  "projectFilePath": "C:\\Users\\pstep\\Desktop\\Github_Repos\\lan-game-hub-api\\lan-game-hub-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pstep\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\pstep\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",

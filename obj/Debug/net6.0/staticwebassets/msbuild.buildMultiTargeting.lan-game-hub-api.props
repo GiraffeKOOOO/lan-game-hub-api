@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\lan-game-hub-api.props" />
+</Project>

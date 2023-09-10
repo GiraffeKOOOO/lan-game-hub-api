@@ -1,3 +1,6 @@
+using lan_game_hub_api;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +9,17 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// database contex dependcy injection
+
+var dbHost = "localhost";
+var dbName = "lan-game-hub";
+var dbPassword = "";
+
+var connectionString = $"server={dbHost};port=3306;database={dbName};user=root;password={dbPassword}";
+builder.Services.AddDbContext<UserDbContext>(o => o.UseMySQL(connectionString));
+
+// -----------------------------------
 
 var app = builder.Build();
 

@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "9eb181e5-86f8-4784-954e-600e2bf0c771",
+		"name": "lan-game-hub-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20722810"
+	},
+	"item": [
+		{
+			"name": "User API calls",
+			"item": [
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/User",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"User"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/User/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"User",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_name\":\"Ben\",\r\n    \"user_role\":\"player\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5134/api/User",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"User"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\":8,\r\n    \"user_name\":\"Ron2\",\r\n    \"user_role\":\"player\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5134/api/User",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"User"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5134/api/User/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"User",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Game API calls",
+			"item": [
+				{
+					"name": "Get Games",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/Game",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"Game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Game by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5134/api/Game/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"Game",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Game",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"game_name\":\"Rocket League\",\r\n    \"game_mode\":\"2 vs 2\",\r\n    \"game_start_time\": \"Friday 22:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5134/api/Game",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"Game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Game",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"game_id\":3,\r\n    \"game_name\":\"Rocket League\",\r\n    \"game_mode\":\"1 vs 1\",\r\n    \"game_start_time\": \"Friday 22:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5134/api/Game",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"Game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Game",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5134/api/Game/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5134",
+							"path": [
+								"api",
+								"Game",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

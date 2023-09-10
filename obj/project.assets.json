@@ -2835,11 +2835,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pstep\\Desktop\\test\\lan-game-hub-api\\lan-game-hub-api.csproj",
+      "projectUniqueName": "C:\\Users\\pstep\\Desktop\\Github_Repos\\lan-game-hub-api\\lan-game-hub-api.csproj",
       "projectName": "lan-game-hub-api",
-      "projectPath": "C:\\Users\\pstep\\Desktop\\test\\lan-game-hub-api\\lan-game-hub-api.csproj",
+      "projectPath": "C:\\Users\\pstep\\Desktop\\Github_Repos\\lan-game-hub-api\\lan-game-hub-api.csproj",
       "packagesPath": "C:\\Users\\pstep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pstep\\Desktop\\test\\lan-game-hub-api\\obj\\",
+      "outputPath": "C:\\Users\\pstep\\Desktop\\Github_Repos\\lan-game-hub-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pstep\\AppData\\Roaming\\NuGet\\NuGet.Config",

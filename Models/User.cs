@@ -1,11 +1,19 @@
-﻿namespace lan_game_hub_api.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace lan_game_hub_api.Models
 {
+    [Table("users")]
     public class User
     {
-        public int UserId { get; set; }
+        [Key]
+        [Column("user_id")]
+        public int user_id { get; set; }
 
-        public string UserName { get; set; }
+        [Column("user_name")]
+        public string user_name { get; set; }
 
-        public string UserRole { get; set; }
+        [Column("user_role")]
+        public string user_role { get; set; }
     }
 }
