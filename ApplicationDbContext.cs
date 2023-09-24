@@ -5,11 +5,12 @@ using Microsoft.EntityFrameworkCore.Storage;
 
 namespace lan_game_hub_api
 {
-    public class UserDbContext : DbContext
+    public class ApplicationDbContext : DbContext
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Game> Games { get; set; }
-        public UserDbContext(DbContextOptions<UserDbContext> dbContextOptions) : base(dbContextOptions) 
+        public DbSet<GamePlayers> GamePlayers { get; set; }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> dbContextOptions) : base(dbContextOptions) 
         {
             try
             {

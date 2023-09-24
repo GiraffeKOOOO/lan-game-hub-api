@@ -1,5 +1,4 @@
 ﻿using lan_game_hub_api.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace lan_game_hub_api.Controllers
@@ -8,11 +7,10 @@ namespace lan_game_hub_api.Controllers
     [ApiController]
     public class GameController : ControllerBase
     {
-        private readonly UserDbContext _dbContext;
-
-        public GameController(UserDbContext userDbContext)
+        private readonly ApplicationDbContext _dbContext;
+        public GameController(ApplicationDbContext applicationDbContext)
         {
-            _dbContext = userDbContext;
+            _dbContext = applicationDbContext;
         }
 
         [HttpGet]
@@ -32,6 +30,8 @@ namespace lan_game_hub_api.Controllers
         public async Task<ActionResult> Create(Game game)
         {
             await _dbContext.Games.AddAsync(game);
+            // will need to create the players table here
+            await _dbContext.Database.
             await _dbContext.SaveChangesAsync();
             return Ok();
         }

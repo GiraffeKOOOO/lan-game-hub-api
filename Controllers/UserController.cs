@@ -1,5 +1,4 @@
 ﻿using lan_game_hub_api.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace lan_game_hub_api.Controllers
@@ -8,10 +7,10 @@ namespace lan_game_hub_api.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly UserDbContext _dbContext;
-        public UserController(UserDbContext userDbContext) 
+        private readonly ApplicationDbContext _dbContext;
+        public UserController(ApplicationDbContext applicationDbContext) 
         {
-            _dbContext = userDbContext; 
+            _dbContext = applicationDbContext; 
         }
 
         [HttpGet]

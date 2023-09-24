@@ -17,7 +17,7 @@ var dbName = "lan-game-hub";
 var dbPassword = "";
 
 var connectionString = $"server={dbHost};port=3306;database={dbName};user=root;password={dbPassword}";
-builder.Services.AddDbContext<UserDbContext>(o => o.UseMySQL(connectionString));
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySQL(connectionString));
 
 // -----------------------------------
 
