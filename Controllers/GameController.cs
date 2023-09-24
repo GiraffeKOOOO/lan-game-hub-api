@@ -31,7 +31,6 @@ namespace lan_game_hub_api.Controllers
         {
             await _dbContext.Games.AddAsync(game);
             // will need to create the players table here
-            await _dbContext.Database.
             await _dbContext.SaveChangesAsync();
             return Ok();
         }

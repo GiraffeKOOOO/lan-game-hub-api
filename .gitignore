@@ -2,3 +2,5 @@
 .vs/lan-game-hub-api/FileContentIndex
 .vs/lan-game-hub-api/v17
 .vs/ProjectEvaluation
+bin/Debug/net6.0
+obj/Debug
