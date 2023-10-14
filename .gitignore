@@ -7,3 +7,4 @@ obj/Debug
 .vs/lan-game-hub-api/v16
 obj/Release/net6.0/lan-game-hub-api.assets.cache
 .vs
+obj
