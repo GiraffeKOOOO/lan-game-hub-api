@@ -12,6 +12,9 @@ namespace lan_game_hub_api.Models
 
         [Column("user_name")]
         public string user_name { get; set; }
+        
+        [Column("user_password")]
+        public string user_password{ get; set; }
 
         [Column("user_role")]
         public string user_role { get; set; }
