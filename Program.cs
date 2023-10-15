@@ -10,6 +10,19 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var AllowAllHeaders = "AllowAllHeaders";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(AllowAllHeaders,
+                          policy =>
+                          {
+                              policy.AllowAnyOrigin()
+                                    .AllowAnyHeader()
+                                    .AllowAnyMethod();
+                          });
+});
+
 // database contex dependcy injection
 
 var dbHost = "localhost";
@@ -29,6 +42,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(AllowAllHeaders);
 
 app.UseAuthorization();
 
