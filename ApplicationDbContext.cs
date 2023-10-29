@@ -9,7 +9,7 @@ namespace lan_game_hub_api
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Game> Games { get; set; }
-        public DbSet<GamePlayers> GamePlayers { get; set; }
+        public DbSet<GamePlayer> GamePlayer { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> dbContextOptions) : base(dbContextOptions) 
         {
             try
