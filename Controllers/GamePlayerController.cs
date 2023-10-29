@@ -36,4 +36,22 @@ namespace lan_game_hub_api.Controllers
         }
 
     }
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class GetGamePlayerCountController : ControllerBase
+    {
+        private readonly ApplicationDbContext _dbContext;
+        public GetGamePlayerCountController(ApplicationDbContext applicationDbContext)
+        {
+            _dbContext = applicationDbContext;
+        }
+
+        [HttpGet("{gameId:int}")]
+        public async Task<int> GetGamePlayersCount(int gameId)
+        {
+            var gameplayer = await _dbContext.GamePlayer.Where(gameplayer => gameplayer.game_id == gameId).ToListAsync();
+            return gameplayer.Count;
+        }
+    }
 }
