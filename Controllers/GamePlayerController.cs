@@ -54,4 +54,32 @@ namespace lan_game_hub_api.Controllers
             return gameplayer.Count;
         }
     }
+
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class GetGamePlayerStatusController : ControllerBase
+    {
+        private readonly ApplicationDbContext _dbContext;
+        public GetGamePlayerStatusController(ApplicationDbContext applicationDbContext)
+        {
+            _dbContext = applicationDbContext;
+        }
+
+        [HttpGet]
+        public async Task<bool> GetGamePlayersStatus(int gameId, int userId)
+        {
+
+            var gameplayer = await _dbContext.GamePlayer.Where(gameplayer => gameplayer.game_id == gameId).Where(gameplayer => gameplayer.user_id == userId).FirstOrDefaultAsync();
+            if (gameplayer != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
 }
+    
