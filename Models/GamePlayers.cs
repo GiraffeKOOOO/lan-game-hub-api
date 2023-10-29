@@ -7,6 +7,9 @@ namespace lan_game_hub_api.Models
     public class GamePlayer
     {
         [Key]
+        [Column("action_id")]
+        public int action_id { get; set; }
+
         [Column("game_id")]
         public int game_id { get; set; }
 
