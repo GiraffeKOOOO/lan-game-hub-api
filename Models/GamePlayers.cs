@@ -15,5 +15,9 @@ namespace lan_game_hub_api.Models
 
         [Column("user_id")]
         public int user_id { get; set; }
+        
+        [Column("user_name")]
+        public string user_name { get; set; }
+
     }
 }
