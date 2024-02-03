@@ -27,9 +27,9 @@ builder.Services.AddCors(options =>
 
 var dbHost = "localhost";
 var dbName = "lan-game-hub";
-var dbPassword = "";
+var dbPassword = "qweasd123";
 
-var connectionString = $"server={dbHost};port=3306;database={dbName};user=root;password={dbPassword}";
+var connectionString = $"server={dbHost};port=3306;database={dbName};user=westlan;password={dbPassword}";
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySQL(connectionString));
 
 // -----------------------------------

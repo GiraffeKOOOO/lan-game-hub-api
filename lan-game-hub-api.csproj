@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>lan_game_hub_api</RootNamespace>
+    <Configurations>Debug;Release;linux</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
